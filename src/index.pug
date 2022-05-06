@@ -6,37 +6,267 @@ append variables
     - var menuHref = '/'
 
 block top-position
-    section.top-position.mb-5
-        .module
-            .container
-                .module__title Модуль в позиции TOP
+    section.top-position
+        .module.d-flex.align-items-center
+            .container-xxl
+                .module__logo-container.d-flex.align-items-center.mb-30.flex-sm-row.flex-column
+                    img.img-fluid.module__logo(src="./images/logo-color.png" alt="Башнефть")
+                    .module__date.mt-20.mt-sm-0 15-16 июня 
+                        span 2022
+                h1.module__title.title ИССЛЕДОВАНИЕ СКВАЖИН:
+                    span ЦЕЛЕПОЛАГАНИЕ 
+                        +icon('arrow-right')
+                    span ТЕХНОЛОГИИ
+                        +icon('arrow-right')
+                    span ЭФФЕКТ
+                .module__address 
+                    +icon('location')
+                    | Республика Башкортостан, г.&nbsp;Уфа,&nbsp;ул.&nbsp;Ленина&nbsp;25/29, 
+                    span гостиничный комплекс «Башкортостан»
+block partition
+    section.partition#partition
+        .container-xxl
+            h2.partition__title.title СЕКЦИИ 
+                span конференции
+            .partition__content.d-flex.col-lg-6.gap-5.flex-lg-row.flex-column
+                a(href="#section1").partition_block
+                    .partition_block-title 1 СЕКЦИЯ
+                    .partition_block-description Результаты исследований как инструмент принятия решений при управлении разработкой месторождений
+                    img.img-fluid.partition_block-image(src="./images/woman.png" alt="Девушка")
+                a(href="#section2").partition_block
+                    .partition_block-title 2 СЕКЦИЯ
+                    .partition_block-description ГИС и Петрофизика
+                    img.img-fluid.partition_block-image(src="./images/petrolium.png" alt="Земля в разрезе")
+block schedule
+    section.schedule#schedule
+        //- img.img-fluid.schedule__image(src="./images/bashneft-left-logo.png" alt="Логотип Башнефти")
+        .container-xxl.schedule__container
+            h2.schedule__title.title Программа
+            p.schedule__description 14 июня (вторник) 
+                span 12:00 - 16:00 - Заезд участников
+            .schedule__tabs.d-flex.col-md-6.gap-md-5.flex-md-row.flex-column.gap-4
+                div(data-day='1').schedule__tab.d-flex.justify-content-center.schedule__tab_active
+                    +icon('schedule-icon')
+                    p I день
+                        span 15 июня, среда
+                div(data-day='2').schedule__tab
+                    +icon('schedule-icon')
+                    p II день
+                        span 16 июня, четверг
+            .schedule__tab-content.schedule__tab-content_active#1
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 08:00 - 09:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Регистрация участников
+                .schedule__content.d-flex
+                    .schedule__subject-title.col-12.schedule__text ПЛЕНАРНОЕ ЗАСЕДАНИЕ
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 09:00 - 09:10
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Инструктаж по технике безопасности
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 09:10 - 09:30
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Приветственное слово
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 09:30 - 10:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Политика Компании в области импортозамещения ГИС
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 10:00 - 10:40
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Собственный высокотехнологичный сервис ГИС в НК «Роснефть»
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 10:40 - 11:10
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text КОФЕ-БРЕЙК
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 11:10 - 11:50
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Вызовы при ГГР и области ГИС
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 11:50 - 12:20
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Развитие исследований на шельфовых месторождениях
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 12:20 - 13:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Научно-технический потенциал Компании и импортозамещения в области LWD
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 13:00 - 14:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text ОБЕД
+                .schedule__content.d-flex#section1
+                    .schedule__subject-title.col-12.schedule__text СЕКЦИЯ №1 «Результаты исследований как инструмент принятия решений при управлении разработкой месторождений»
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:00 - 14:40
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Систематизация и обработка исследовательстких данных. Результаты ЦИП-222
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:40 - 15:20
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text СТПК как инструмент для увеличения эффективности исследовательских программ
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 15:20 - 16:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text КОФЕ-БРЕЙК
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:00 - 16:40
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Малозатратные ГДИС на зрелых месторождениях
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:40 - 17:20
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Автоматизация проведения глубинных исследований при контроле за разработкой
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 17:20 - 18:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Подведение итогов работы секции
+                .schedule__content.d-flex#section2
+                    .schedule__subject-title.col-12.schedule__text СЕКЦИЯ №2 «ГИС и Петрофизика»
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:00 - 14:40
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Импортозамещение хайтек аппаратуры ГИС: результаты полевых работ в сравнении с импортными аналогами
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:40 - 15:20
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Информационная безопасность Компании: где интерпретировать и хранить данные исследований
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 15:20 - 16:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text КОФЕ-БРЕЙК
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:00 - 16:40
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Разработка и внедрение инструкции по использованию хайтек ГИС
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:40 - 17:20
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Вызовы при ГРР и магистральных проектах Компании
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 17:20 - 18:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Подведение итогов работы секции
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 18:30
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Ужин
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 19:30
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Эксурсионная программа
+            .schedule__tab-content#2
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 08:00 - 09:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Регистрация участников
+                .schedule__content.d-flex
+                    .schedule__subject-title.col-12.schedule__text ПЛЕНАРНОЕ ЗАСЕДАНИЕ
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 09:00 - 09:10
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Инструктаж по технике безопасности
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 09:10 - 09:30
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Приветственное слово
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 09:30 - 10:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Политика Компании в области импортозамещения ГИС
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 10:00 - 10:40
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Собственный высокотехнологичный сервис ГИС в НК «Роснефть»
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 10:40 - 11:10
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text КОФЕ-БРЕЙК
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 11:10 - 11:50
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Вызовы при ГГР и области ГИС
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 11:50 - 12:20
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Развитие исследований на шельфовых месторождениях
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 12:20 - 13:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Научно-технический потенциал Компании и импортозамещения в области LWD
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 13:00 - 14:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text ОБЕД
+                .schedule__content.d-flex#section1
+                    .schedule__subject-title.col-12.schedule__text СЕКЦИЯ №1 «Результаты исследований как инструмент принятия решений при управлении разработкой месторождений»
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:00 - 14:40
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Систематизация и обработка исследовательстких данных. Результаты ЦИП-222
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:40 - 15:20
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text СТПК как инструмент для увеличения эффективности исследовательских программ
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 15:20 - 16:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text КОФЕ-БРЕЙК
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:00 - 16:40
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Малозатратные ГДИС на зрелых месторождениях
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:40 - 17:20
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Автоматизация проведения глубинных исследований при контроле за разработкой
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 17:20 - 18:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Подведение итогов работы секции
+                .schedule__content.d-flex#section2
+                    .schedule__subject-title.col-12.schedule__text СЕКЦИЯ №2 «ГИС и Петрофизика»
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:00 - 14:40
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Импортозамещение хайтек аппаратуры ГИС: результаты полевых работ в сравнении с импортными аналогами
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 14:40 - 15:20
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Информационная безопасность Компании: где интерпретировать и хранить данные исследований
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 15:20 - 16:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text КОФЕ-БРЕЙК
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:00 - 16:40
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Разработка и внедрение инструкции по использованию хайтек ГИС
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 16:40 - 17:20
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Вызовы при ГРР и магистральных проектах Компании
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 17:20 - 18:00
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Подведение итогов работы секции
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 18:30
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Ужин
+                .schedule__content.d-flex
+                    .schedule__time.schedule__text.col-md-2.col-sm-3.col-5 19:30
+                    .schedule__subject.col-md-10.col-sm-9.col-7.schedule__text Эксурсионная программа
+block form
+    section.form#form
+        //- +icon('form-decor')
+        .container-xxl.form__container 
+            h2.title.form__title Отзыв 
+                span о&nbsp;конференции
+            form(action="#" method="post")
+                .form__placeholder-container
+                    input(type="text" placeholder="Как Вас зовут?" required)
+                    label ФИО*
+                .form__placeholder-container
+                    input(type="text" placeholder="Например: ООО «Организация»" required)
+                    label Из какой Вы организации?*
+                .form__placeholder-container
+                    input(type="email" placeholder="Например: example@yandex.ru" required)
+                    label Ваш E-mail*
+                .form__placeholder-container
+                    textarea(type="text" placeholder="Поделитесь Вашим мнением о конференции" required)
+                    label Комментарий*
+                .form__agreement
+                    +icon('agreement-icon')
+                    | Нажимая кнопку, вы даете согласие на обработку персональных данных
+                button(type='submit' data-id="openmodal").form__btn.hvr-bounce-to-right Отправить отзыв
+block security
+    section.security#security
+        .container-xxl
+            h2.title.security__title МЕРЫ БЕЗОПАСНОСТИ
+            ul.security__list.justify-content-between.gap-5
+                li.security__item
+                    +icon('grafic')
+                    .security__item-content
+                        .security__item-title График выступлений
+                        .security__item-subtitle График выступлений можете найти в своей секции.
+                li.security__item
+                    +icon('temperature')
+                    .security__item-content
+                        .security__item-title Проверка ТЕМПЕРАТУРЫ
+                        .security__item-subtitle При входе обязательно измерьте температуру. При наличии признаком недомогания сообщите организатором и воздержитесь от контактов с другими участниками.
+                li.security__item
+                    +icon('maska')
+                    .security__item-content
+                        .security__item-title Средства индивидуальной защиты
+                        .security__item-subtitle Обязательно наличие защитной маски и перчаток. На стойке регистрации можно взять новый комплект СИЗ.
+                li.security__item
+                    +icon('hands')
+                    .security__item-content
+                        .security__item-title Дезинфекция поверхностей
+                        .security__item-subtitle Трибуна для выступления обрабатывается после каждого участника дезинфицирующим средством.
+block modal
+    +modal()
+        img.img-fluid.modal__img(src="./images/success.png" alt="Успешно")
+        p.modal__text Ваш отзыв успешно отправлен!
+            span Спасибо за уделенное время!
 
-block columns
-    main.content--right.col-lg-9
-        article.page.textblock
-            h1.mb-5 !{title}
+        img.img-fluid.modal__img(src="./images/unsuccess.png" alt="Ошибка")
+        p.modal__text Извините, при отправке произошла ошибка!
+            span Пожалуйста, попробуйте заполнить форму еще раз
 
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, praesentium.
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid consectetur consequatur deserunt dolores est ex fugit non odit reprehenderit! Animi commodi itaque magnam maxime nam obcaecati quis quos repudiandae.
-            p
-                // Подключение svg иконок
-                +icon("arrow-up")
-            p
-                img.img-fluid(src="./images/no-foto.webp" alt="")
-
-        //-pagination
-        .pagination.mt-30
-            include ./components/pagination/pagination
-
-    //- Include sidebar
-    include ./components/sidebar/sidebar--left
-
-
-block bottom-position
-    section.bottom-position.mt-5
-        .module
-            .container
-                .module__title Модуль в позиции BOTTOM
-
-
-
+        button(data-id="closemodal").modal__btn Вернуться на сайт

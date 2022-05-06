@@ -1,12 +1,28 @@
-header.header.py-15.mb-30
-    .container
-        .row.align-items-center
-            .col-3.d-lg-none
-                include ../hamburger/hamburger
+header.header.pt-25
+    .container-xxl
+        .row.align-items-center.mb-20.justify-content-lg-between.justify-content-sm-center.justify-content-between
+            //- .col-3.d-lg-none
+            //-     include ../hamburger/hamburger
 
-            .col-xl-4.col-lg-3.col-6.text-center.text-lg-start
-                .logo
-                    include ../logo/logo
+            .col-xxl-5.col-lg-7.col-sm-12.col-8.mb-lg-0.mb-sm-40.mb-0.align-items-sm-center
+                    .logo.header__logo
+                        include ../logo/logo
 
-            .col-xl-8.col-lg-9.col-3
-                include ../mainmenu/mainmenu
+            .col-xxl-7.col-lg-5.col-md-12.col-4.header__connection-container
+                ul.header__connection.--align-center.flex-sm-row.flex-column
+                    li
+                        a(href="tel:+79656693777" title='+7 965 66-93-7777') 
+                            +icon("phone").d-xxl-none.header__connection-icon
+                            p.d-none.d-xxl-block.mb-0 +7 965 66-93-7777
+                    li
+                        a(href="mailto: NORKA@bn.rosneft.ru" title='NORKA@bn.rosneft.ru') 
+                            +icon("envelope").d-xxl-none.header__connection-icon
+                            p.d-none.d-xxl-block.mb-0 NORKA@bn.rosneft.ru
+                    li
+                        a(href="#").header__connection-link_bg.--align-center
+                            +icon('online').header__connection-icon
+                            p.d-none.d-lg-block.mb-0 Прямая трансляция
+                .d-md-none
+                    include ../hamburger/hamburger
+        .row.justify-content-center
+            include ../mainmenu/mainmenu

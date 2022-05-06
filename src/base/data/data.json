@@ -2,45 +2,27 @@
   "mainmenuData": [
     {
       "text": "Главная",
-      "link": "/"
+      "link": "index.html"
     },
     {
-      "text": "Пункт 2",
-      "link": "#",
-      "subitems": [
-        {
-          "text": "Подпункт 1",
-          "link": "#"
-        },
-        {
-          "text": "Подпункт 2",
-          "link": "#"
-        },
-        {
-          "text": "Подпункт 3",
-          "link": "#"
-        },
-        {
-          "text": "Подпункт 4",
-          "link": "#"
-        },
-        {
-          "text": "Подпункт 5",
-          "link": "#"
-        }
-      ]
+      "text": "Секции",
+      "link": "#partition"
     },
     {
-      "text": "Пункт 3",
-      "link": "#"
+      "text": "Программа",
+      "link": "#schedule"
     },
     {
-      "text": "Пункт 4",
-      "link": "#"
+      "text": "Отзывы",
+      "link": "#form"
     },
     {
-      "text": "Пункт 5",
-      "link": "#"
+      "text": "Меры безопасности",
+      "link": "#security"
+    },
+    {
+      "text": "Галерея",
+      "link": "gallery.html"
     }
   ]
 }

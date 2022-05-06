@@ -1,3 +1,21 @@
-footer.footer.bg-dark.py-3
-    .container
-        p © Copyright 2021 ...
+footer.footer
+    .footer__top 
+        .container-xxl.footer__container
+            +icon('footer__logo')
+            ul.footer__list 
+                li.footer__item 
+                    +icon("phone")
+                    | Телефон приемной: 
+                    a(href='tel:+73472739233') +7 (347) 273-92-33, доб. 12145 
+                li.footer__item 
+                    +icon("envelope")
+                    | Электронная почта:
+                    a(href='mailto:+73472739233') petrotest@bashneft.ru
+                li.footer__item 
+                    +icon("location")
+                    | Адрес:
+                    span 450006, г. Уфа, ул. К. Маркса, 20
+    .footer__bottom
+        .container-xxl
+            | IV ЕЖЕГОДНАЯ КОРПОРАТИВНАЯ НАУЧНО-ТЕХНИЧЕСКАЯ КОНФЕРЕНЦИЯ
+            span © БАШНЕФТЬ ПЕТРОТЕСТ, 2022 Все права защищены.

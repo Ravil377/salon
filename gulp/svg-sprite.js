@@ -5,11 +5,11 @@ module.exports = function () {
 		return $.gulp.src(path.path.src.svgIcons)
 			.pipe($.plugins.plumber())
 			.pipe($.plugins.cheerio({
-				run($) {
-					$('[fill]').removeAttr('fill')
-					$('[stroke]').removeAttr('stroke')
-					$('[style]').removeAttr('style')
-				},
+				// run($) {
+					// $('[fill]').removeAttr('fill')
+					// $('[stroke]').removeAttr('stroke')
+					// $('[style]').removeAttr('style')
+				// },
 				parserOptions: { xmlMode: true }
 			}))
 			.pipe($.plugins.replace('&gt;', '>'))

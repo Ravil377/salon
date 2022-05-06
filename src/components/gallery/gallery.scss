@@ -1,0 +1,94 @@
+.gallery {
+    padding-top: 50px;
+    padding-bottom: 120px;
+    position: relative;
+}
+.decor {
+    position: absolute;
+    display: none;
+    @media (min-width: 768px) {
+        display: block;
+        width: 275px;
+        height: 481px;
+        right: 0;
+        top: 0;
+        z-index: -1;    
+    }
+}
+.gallery__list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: space-between;
+    justify-items: center;
+    @media (min-width: 576px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (min-width: 992px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.gallery__item {
+    
+}
+.gallery__link {
+    text-decoration: none;
+    transition: .4s;
+    position: relative;
+    &:hover {
+        opacity: .8;
+    }
+}
+.gallery__photo-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: rgba(51, 55, 57, .3);
+    top: 10px;
+    left: 6px;
+    min-width: 66px;
+    height: 32px;
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 38px;
+    padding: 0 5px;
+    color: white;
+    .icon {
+        margin-right: 5px;
+    }
+
+}
+.gallery__slide {
+    max-width: 404px;
+    width: 100%;
+}
+.gallery__text {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333739;
+    margin-top: 12px;
+}
+.gallery__img {
+    width: 100%;
+    min-height: 223px;
+    object-fit: cover;
+}
+.gallery__title {
+    position: relative;
+    padding-left: 55px;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 36px;
+        height: 36px;
+        background-image: url('../images/bashneft-logo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

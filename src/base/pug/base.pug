@@ -1,4 +1,5 @@
 include ../../mixins/pug/svg-icon
+include ../../mixins/pug/modal
 block variables
     -
         var baseDir = './';
@@ -10,39 +11,40 @@ html(lang="ru")
 
     body(class=pageClass)
         .wrapper
-
             .wrapper__content
                 //- Include header
                 include ../../components/header/header
 
-                if (pageClass !== 'homepage')
-                    nav.breadcrumbs.mb-sm-30
-                        .container
-                            ul.breadcrumbs__list
-                                li
-                                    a(href="/") Главная
-                                    span.breadcrumbs__divider /
+                //- if (pageClass !== 'homepage')
+                //-     nav.breadcrumbs.mb-sm-30
+                //-         .container
+                //-             ul.breadcrumbs__list
+                //-                 li
+                //-                     a(href="/") Главная
+                //-                     span.breadcrumbs__divider /
 
-                                li.is-active #{title}
+                //-                 li.is-active #{title}
 
                 block top-position
-
-                .container
-                    .row
-                        block columns
-
-                block bottom-position
+                block partition
+                block schedule
+                block form
+                block security
+                block gallery 
+                block broadcast
+                block astrum
+                block modal
 
             //- Include footer
             include ../../components/footer/footer
 
         //- Include callback
-        include ../../components/form/form--callback
+        //- include ../../components/form/form--callback
 
         a.go-top.go-top--js(href='#')
             +icon('arrow-up')
 
-        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        //- script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
         script(src=`${baseDir}js/main.js`)
 
         block script

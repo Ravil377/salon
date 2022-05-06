@@ -1,2 +1,103 @@
 .header
-    background-color: $gray-400
+    background-color: #333739
+    &__logo
+        .icon-logo
+            min-height:44px
+            max-width: 222px
+            width: 100%
+        .icon-rosneft
+            min-height:40px
+            max-width: 119px
+            width: 100%
+        .icon-bashneft
+            min-height:26px
+            max-width: 121px
+            width: 100%      
+        
+        .logo__link
+            display: block
+            width: fit-content
+            
+            &:nth-child(3)
+                @media (min-width: 768px)
+                    align-self: end
+
+    &__connection
+        display: flex
+        justify-content: center
+        @include ul-none
+        @media (min-width:992px)
+            justify-content: flex-end
+        &-container
+            width: fit-content
+            @media (min-width:576px)
+                flex-direction: row
+                margin: 0 auto            
+                display: flex
+                align-items: center
+                justify-content: center
+
+            @media (min-width:768px)
+                margin: 0
+
+        &-icon
+            width: 2rem
+            height: 2rem
+            @media (min-width: 1400px)
+                height: 1rem
+        &-link_bg
+            border: none        
+    
+            @media (min-width: 992px)
+                background: linear-gradient(0deg, #D31E83 0%, #E42680 100%)
+        li
+            margin-bottom: 20px
+            @media (min-width: 578px)
+                margin-right: 16px
+                margin-bottom: 0
+
+            &:last-child
+                margin-right: 0
+
+            a
+                display: flex                
+                color: $white
+                text-decoration: none
+                transition: .4s
+                
+                &:hover
+                    color: #149446
+
+                &.header__connection-link_bg
+                    transition: .4s
+
+                    &:hover
+                        color: white !important
+                        background: #149446
+
+                    @media (min-width: 992px)
+                        border: none
+                        padding: 11px 21px
+                        border-radius: 50px
+                        font-style: normal
+                        font-weight: 400
+                        font-size: 17px
+
+                @media (min-width: 1400px)
+                    border: 1px solid #747472
+                    padding: 11px 21px
+                    border-radius: 50px
+                    font-style: normal
+                    font-weight: 400
+                    font-size: 17px
+
+                .icon-phone
+                    color: white
+                
+                .icon-envelope
+                    stroke: black
+                .icon-online
+                    margin-right: 0
+                    @media (min-width: 578px)
+                        margin-right: 10px
+            

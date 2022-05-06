@@ -1,0 +1,25 @@
+.breadcrumbs {
+    display: flex;
+    span {
+        margin-left: 10px;
+        padding-left: 12px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 5px;
+            height: 5px;
+            background-color: #949EA3;
+            border-radius: 50%;
+        }
+    }
+}
+.breadcrumbs__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #949EA3;
+    text-decoration: none;
+}
