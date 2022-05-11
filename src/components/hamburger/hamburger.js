@@ -4,7 +4,8 @@ import { overlayAdd, overlayRemove } from '../overlay/overlay'
 const $hamburger = document.querySelector('.hamburger--js')
 const $mainmenu = document.querySelector('.mainmenu--js')
 const $closeBtn = document.querySelector('.mainmenu--close')
-
+const mainmenuList = document.querySelector('.mainmenu__list')
+mainmenuList.addEventListener('click', hideMenu)
 function showMenu() {
 	$mainmenu.classList.add('is-active')
 	$hamburger.classList.add('is-active')

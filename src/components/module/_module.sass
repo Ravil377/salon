@@ -29,13 +29,16 @@
         position: absolute
         width: 1000px
         height: 100%
-        left: 200px
+        left: 0
         bottom: 0
         background: url(../images/background.png)
         background-repeat: no-repeat
         background-size: cover
-        background-position-x: -886px
+        background-position-x: -800px
         z-index: -3
+        @media(min-width: 576px)
+            left: 200px
+            background-position-x: -886px
         @media(min-width: 992px)
             right: 0
             left: unset
@@ -43,7 +46,7 @@
     &::after
         content: ""
         background: unset
-        @media(min-width: 400px)
+        @media(min-width: 576px)
             position: absolute
             left: 50px
             bottom: 0
@@ -69,25 +72,28 @@
         object-fit: contain
 
     &__date
-        margin-left: 20px
         font-weight: 700
         font-size: 18px
         text-transform: uppercase
         color: #000000
         padding: 9px
         border: 1px solid #000000
-        background-color: #fff9
         border-radius: 10px
+        width: fit-content
+        @media(min-width: 576px)
+            background-color: #fff9
+        @media (min-width: 768px)
+            margin-left: 20px
         span
             color: #D61F74
     &__title
         margin-bottom: 38px
-        background-color: #fff9
         border-raduis: 5px
         width: fit-content
         padding: 0 15px 0 0
         z-index: 2
-
+        @media(min-width: 576px)
+            background-color: #fff9
         span
             display: block
             color: $green
@@ -106,11 +112,12 @@
         line-height: 24px
         color: $text
         position: relative
-        background-color: #fff9
         border-raduis: 5px
         width: fit-content
         padding: 0 15px 0 0
         padding-left: 47px
+        @media(min-width: 576px)
+            background-color: #fff9
         span
             display: block
         .icon-location

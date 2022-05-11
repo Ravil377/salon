@@ -1,6 +1,10 @@
 .header
     background-color: #333739
+    position: sticky
+    top: 0
+    z-index: 20
     &__logo
+        width: fit-content
         .icon-logo
             min-height:44px
             max-width: 222px
@@ -17,28 +21,33 @@
         .logo__link
             display: block
             width: fit-content
-            
+            &:nth-child(2)
+                display: none
+                @media (min-width: 1400px)
+                    display: block
             &:nth-child(3)
-                @media (min-width: 768px)
+                display: none
+                @media (min-width: 1400px)
+                    display: block
                     align-self: end
 
     &__connection
         display: flex
         justify-content: center
         @include ul-none
-        @media (min-width:992px)
-            justify-content: flex-end
+        justify-content: flex-end
+        
         &-container
-            width: fit-content
-            @media (min-width:576px)
-                flex-direction: row
-                margin: 0 auto            
-                display: flex
-                align-items: center
-                justify-content: center
+            flex-direction: row
+            margin: 0
+            display: flex
+            align-items: center
+            justify-content: center
+
 
             @media (min-width:768px)
                 margin: 0
+                justify-content: flex-end
 
         &-icon
             width: 2rem
@@ -51,10 +60,8 @@
             @media (min-width: 992px)
                 background: linear-gradient(0deg, #D31E83 0%, #E42680 100%)
         li
-            margin-bottom: 20px
-            @media (min-width: 578px)
-                margin-right: 16px
-                margin-bottom: 0
+            margin-right: 16px
+            margin-bottom: 0
 
             &:last-child
                 margin-right: 0
@@ -64,40 +71,30 @@
                 color: $white
                 text-decoration: none
                 transition: .4s
+                border: 1px solid #747472
+                padding: 11px 21px
+                border-radius: 50px
+                font-style: normal
+                font-weight: 400
+                font-size: 17px
                 
                 &:hover
                     color: #149446
 
                 &.header__connection-link_bg
                     transition: .4s
-
+                    border: none !important
                     &:hover
                         color: white !important
                         background: #149446
 
                     @media (min-width: 992px)
-                        border: none
+                        
                         padding: 11px 21px
                         border-radius: 50px
                         font-style: normal
                         font-weight: 400
                         font-size: 17px
 
-                @media (min-width: 1400px)
-                    border: 1px solid #747472
-                    padding: 11px 21px
-                    border-radius: 50px
-                    font-style: normal
-                    font-weight: 400
-                    font-size: 17px
-
-                .icon-phone
-                    color: white
-                
-                .icon-envelope
-                    stroke: black
                 .icon-online
-                    margin-right: 0
-                    @media (min-width: 578px)
-                        margin-right: 10px
-            
+                    margin-right: 10px

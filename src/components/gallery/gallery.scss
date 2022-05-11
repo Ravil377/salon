@@ -28,9 +28,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
-.gallery__item {
-    
-}
+
 .gallery__link {
     text-decoration: none;
     transition: .4s;
@@ -46,7 +44,7 @@
     position: absolute;
     background: rgba(51, 55, 57, .3);
     top: 10px;
-    left: 6px;
+    left: 10px;
     min-width: 66px;
     height: 32px;
     border-radius: 20px;

@@ -5,13 +5,14 @@ mixin menuitem(item)
             if (item.link === '/')
                 a(href= "/")= item.text
             else
-                a(href= "/" + item.link + ".html")= item.text
+                //- a(href= "/" + item.link + ".html")= item.text
+                a(href= item.link)= item.text
 
             if block
                 block
 
 nav.mainmenu.mainmenu--js
-    button.btn-close.mainmenu__close-btn.mainmenu--close.d-md-none(type="button")
+    //- button.btn-close.mainmenu__close-btn.mainmenu--close.d-md-none(type="button")
 
     ul.mainmenu__list
         each item in mainmenuData
@@ -21,3 +22,16 @@ nav.mainmenu.mainmenu--js
                     ul.mainmenu__dropdown
                         each subitem in item.subitems
                             +menuitem(subitem)
+    +icon("rosneft")
+    +icon("bashneft")
+    ul.header__connection
+        li.d-none.d-lg-flex
+            a(href="tel:+79656693777" title='+7 965 66-93-7777') 
+                p.mb-0 +7 965 66-93-7777
+        li.d-none.d-lg-flex
+            a(href="mailto: NORKA@bn.rosneft.ru" title='NORKA@bn.rosneft.ru') 
+                p.mb-0 NORKA@bn.rosneft.ru
+        li
+            a(href="#").header__connection-link_bg.--align-center
+                +icon('online').header__connection-icon
+                p.d-none.d-lg-block.mb-0 Прямая трансляция
