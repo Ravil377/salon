@@ -217,23 +217,8 @@ block form
         .container-xxl.form__container 
             h2.title.form__title Отзыв 
                 span о&nbsp;конференции
-            form(action="#" method="post")
-                .form__placeholder-container
-                    input(type="text" placeholder="Как Вас зовут?" required)
-                    label ФИО*
-                .form__placeholder-container
-                    input(type="text" placeholder="Например: ООО «Организация»" required)
-                    label Из какой Вы организации?*
-                .form__placeholder-container
-                    input(type="email" placeholder="Например: example@yandex.ru" required)
-                    label Ваш E-mail*
-                .form__placeholder-container
-                    textarea(type="text" placeholder="Поделитесь Вашим мнением о конференции" required)
-                    label Комментарий*
-                .form__agreement
-                    +icon('agreement-icon')
-                    | Нажимая кнопку, вы даете согласие на обработку персональных данных
-                button(type='submit' data-id="openmodal").form__btn.hvr-bounce-to-right Отправить отзыв
+            p.form__description Уважаемые участники! Поделитесь Вашим мнением о конференции, заполнив небольшую анкету по кнопке ниже:
+            a(href="form.html").form__link.hvr-bounce-to-right Перейти к анкете
 block security
     section.security#security
         .container-xxl

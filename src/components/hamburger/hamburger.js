@@ -37,10 +37,10 @@ enquire.register('screen and (max-width: 992px)', {
 				hideMenu()
 			}
 		})
-		$closeBtn.addEventListener('click', hideMenu)
+		$closeBtn && $closeBtn.addEventListener('click', hideMenu)
 	},
 	unmatch() {
 		$hamburger.removeEventListener('click', clickHandler)
-		$closeBtn.removeEventListener('click', hideMenu)
+		$closeBtn && $closeBtn.removeEventListener('click', hideMenu)
 	}
 })

@@ -3,18 +3,7 @@
     padding-bottom: 70px;
     position: relative;
     overflow-x: hidden;
-    // &::after {
-    //     content: '';
-    //     position: absolute;
-    //     width: 316px;
-    //     min-height: 593px;
-    //     right: calc(100% - 320px);
-    //     z-index: -1;
-    //     top: 250px;
-    //     background: url('../images/bashneft-left-logo.png');
-    //     background-repeat: no-repeat;
-    //     background-size: contain;
-    // }
+    z-index: 1;
 }
 .schedule__container {
     position: relative;

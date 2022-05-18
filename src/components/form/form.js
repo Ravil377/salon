@@ -1,12 +1,14 @@
-// import inputmask from 'inputmask'
-// const $phoneMask = document.querySelector('.phone-mask--js')
+import inputmask from 'inputmask'
+const $phoneMask = document.querySelector('.phone-mask--js')
 
-// if ($phoneMask) {
-// 	inputmask({
-// 		mask: '+7 (999) 999-99-99'
-// 		// showMaskOnHover: false
-// 	}).mask($phoneMask)
-// }
+if ($phoneMask) {
+	inputmask({
+		mask: '+7 (999) 999-99-99',
+        placeholder: "0",
+        placeholder: '',
+		// showMaskOnHover: false
+	}).mask($phoneMask)
+}
 
 // jQuery(document).ready(($) => {
 // 	// Callback form

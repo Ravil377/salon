@@ -1,5 +1,5 @@
 // Form
-// import './form/form'
+import './form/form'
 
 // Hamburger
 import './hamburger/hamburger'
