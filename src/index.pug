@@ -7,22 +7,26 @@ append variables
 
 block top-position
     section.top-position
-        .module.d-flex.align-items-center
+        .module.d-flex
             .container-xxl
-                .module__logo-container.d-flex.mb-30.flex-sm-row.flex-column
-                    img.img-fluid.module__logo(src="./images/logo-color.png" alt="Башнефть")
+                img.img-fluid.module__image.d-md-none(src="./images/man1.png" alt="Мужчина")
+                .module__title-container
+                    .module__title-content
+                        h1.module__title ИССЛЕДОВАНИЕ СКВАЖИН:
+                            span ЦЕЛЕПОЛАГАНИЕ 
+                                +icon('arrow-right')
+                            span ТЕХНОЛОГИИ
+                                +icon('arrow-right')
+                            span ЭФФЕКТ
+                        .module__address 
+                            +icon('location')
+                            | Республика Башкортостан, г.&nbsp;Уфа,&nbsp;ул.&nbsp;Ленина&nbsp;25/29, 
+                            span гостиничный комплекс «Башкортостан»
+                //- .module__logo-container.d-flex.mb-30.flex-sm-row.flex-column
+                    //- img.img-fluid.module__logo(src="./images/logo-color.png" alt="Башнефть")
                     .module__date.mt-20.mt-sm-0 15-16 июня 
                         span 2022
-                h1.module__title.title ИССЛЕДОВАНИЕ СКВАЖИН:
-                    span ЦЕЛЕПОЛАГАНИЕ 
-                        +icon('arrow-right')
-                    span ТЕХНОЛОГИИ
-                        +icon('arrow-right')
-                    span ЭФФЕКТ
-                .module__address 
-                    +icon('location')
-                    | Республика Башкортостан, г.&nbsp;Уфа,&nbsp;ул.&nbsp;Ленина&nbsp;25/29, 
-                    span гостиничный комплекс «Башкортостан»
+                
 block partition
     section.partition#partition
         .container-xxl

@@ -22,8 +22,7 @@ nav.mainmenu.mainmenu--js
                     ul.mainmenu__dropdown
                         each subitem in item.subitems
                             +menuitem(subitem)
-    +icon("rosneft")
-    +icon("bashneft")
+    +icon("bashneft-petrotest")
     ul.header__connection
         li.d-none.d-lg-flex
             a(href="tel:+79656693777" title='+7 965 66-93-7777') 
@@ -32,6 +31,6 @@ nav.mainmenu.mainmenu--js
             a(href="mailto: NORKA@bn.rosneft.ru" title='NORKA@bn.rosneft.ru') 
                 p.mb-0 NORKA@bn.rosneft.ru
         li
-            a(href="#").header__connection-link_bg.--align-center
+            a(href="#" style="padding: 11px 21px;").header__connection-link_bg.--align-center
                 +icon('online').header__connection-icon
                 p.d-none.d-lg-block.mb-0 Прямая трансляция

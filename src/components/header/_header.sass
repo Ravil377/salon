@@ -3,20 +3,19 @@
     position: sticky
     top: 0
     z-index: 20
+    &__container
+        @media(max-width: 992px)
+            padding: 5px 0
     &__logo
         width: fit-content
         .icon-logo
             min-height:44px
             max-width: 222px
             width: 100%
-        .icon-rosneft
+        .icon-bashneft-petrotest
             min-height:40px
-            max-width: 119px
-            width: 100%
-        .icon-bashneft
-            min-height:26px
-            max-width: 121px
-            width: 100%      
+            max-width: 186px
+            width: 100%    
         
         .logo__link
             display: block
@@ -84,9 +83,12 @@
                 &.header__connection-link_bg
                     transition: .4s
                     border: none !important
+                    padding: 0
                     &:hover
-                        color: white !important
-                        background: #149446
+                        @media(min-width: 992px)
+                            color: white !important
+                            background: #149446
+                            padding: 11px 21px
 
                     @media (min-width: 992px)
                         

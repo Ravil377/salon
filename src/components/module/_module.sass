@@ -1,123 +1,99 @@
 .top-position
     position: relative
-    overflow-x: hidden
-    &::before
-        content: ''
-        background: unset
-        @media(min-width: 576px)
-            position: absolute
-            background: url('../images/decor_right.png')
-            background-repeat: no-repeat
-            background-size: cover
-            left: 300px
-            bottom: 0
-            right: unset
-            width: 712px
-            height: 591px
-            z-index: -1
-        @media(min-width: 992px)
-            right: 0
-            left: unset          
-
+    //overflow-x: hidden
+    
+    @media(min-width: 768px)
+        background: url(../images/man1.png) no-repeat
+        background-size: cover
+        background-position-x: center
+        border-bottom: 20px solid #ECEDF0
 .module
     position: relative
-    min-height: 600px
+    align-items: flex-end
+    overflow-x: hidden
+    @media(min-width: 768px)
+        min-height: 696px
+    &__image
+        margin: 0 -12px
+        max-width: 120%
     @media(min-width: 400px)
-        min-height: 700px
-    &::before
-        content: ''
-        position: absolute
-        width: 1000px
-        height: 100%
-        left: 0
-        bottom: 0
-        background: url(../images/background.png)
-        background-repeat: no-repeat
-        background-size: cover
-        background-position-x: -800px
-        z-index: -3
-        @media(min-width: 576px)
-            left: 200px
-            background-position-x: -886px
-        @media(min-width: 992px)
-            right: 0
-            left: unset
-
-    &::after
-        content: ""
-        background: unset
-        @media(min-width: 576px)
-            position: absolute
-            left: 50px
-            bottom: 0
-            width: 824px
-            height: 100%
-            z-index: -2
-            background: url(../images/man.png)
-            background-repeat: no-repeat
-            background-position-x: 116%
-            background-position-y: 134px
-
-        @media(min-width: 576px)
-            left: 100px
-            background-position-x: 84%
+        min-height: 700pxs
+    &__title-content
+        background: rgba(14, 147, 71, .95)
+        width: 100%
+        padding-left: 1px
+        padding-right: 50px
+        padding-top: 37px
+        padding-bottom: 26px
+        clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%)
         @media(min-width: 768px)
-            left: 250px
-        @media(min-width: 992px)
-            right: 9vw
-            left: unset
+            width: fit-content  
+    &__title-container
+        margin-right: -12px
+        position: relative
+        &:after
+            content: ''
+            background: rgba(14, 147, 71, 0.95)
+            position: absolute
+            top: 0
+            bottom: 0
+            left: -1000px
+            width: 1001px
+        &:before
+            content: '15-16 ИЮНЯ 2022'
+            position: absolute
+            color: white
+            background: #333739
+            z-index: 2
+            top: -21px
+            padding: 7px 14px
 
+            
     &__logo
         max-width: 229px
         object-fit: contain
 
-    &__date
-        font-weight: 700
-        font-size: 18px
-        text-transform: uppercase
-        color: #000000
-        padding: 9px
-        border: 1px solid #000000
-        border-radius: 10px
-        width: fit-content
-        @media(min-width: 576px)
-            background-color: #fff9
-        @media (min-width: 768px)
-            margin-left: 20px
-        span
-            color: #D61F74
     &__title
         margin-bottom: 38px
         border-raduis: 5px
         width: fit-content
         padding: 0 15px 0 0
         z-index: 2
+
+        font-weight: 900
+        font-size: 24px
+        line-height: 32px
+        text-transform: uppercase
+        color: #333739
         @media(min-width: 576px)
-            background-color: #fff9
+            font-weight: 900
+            font-size: 42.0336px
+            line-height: 52px
         span
             display: block
-            color: $green
+            color: white
         .icon-arrow-right
             margin-bottom: 5px
             height: 15px
             width: 22px
-            color: $green
+            color: white
             @media(min-width: 576px)
                 margin-bottom: 7px
                 height: 28px
                 width: 35px
     &__address
         font-weight: 400
-        font-size: 18px
+        font-size: 16px
         line-height: 24px
-        color: $text
+        color: white
         position: relative
-        border-raduis: 5px
         width: fit-content
         padding: 0 15px 0 0
         padding-left: 47px
+        max-width: 80%
         @media(min-width: 576px)
-            background-color: #fff9
+            font-size: 18px
+            line-height: 24px
         span
             display: block
         .icon-location
@@ -126,4 +102,4 @@
             top: 0
             height: 37px
             width: 25px
-            color: $green
+            color: white
