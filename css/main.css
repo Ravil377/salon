@@ -13508,12 +13508,12 @@ body.is-animate .overlay {
   width: 100%;
   height: calc(100vh - 95px);
   padding-top: 50px;
-  min-height: 700px;
+  min-height: 900px;
 }
 @media (min-width: 768px) {
   .how {
     height: calc(100vh - 125px);
-    min-height: 700px;
+    min-height: 800px;
   }
 }
 @media (min-width: 1300px) {
