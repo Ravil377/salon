@@ -12570,7 +12570,7 @@ ol {
   position: sticky;
   top: 0;
   background-color: #ffffff;
-  z-index: 2;
+  z-index: 3;
 }
 .header__hamburger {
   padding: 0;
@@ -13952,6 +13952,39 @@ body.is-animate .overlay {
   margin-top: 40px;
   font-weight: 300px;
   font-size: 0.875rem;
+}
+
+.offer {
+  background-color: #3c3c3b;
+  width: 100%;
+  min-height: calc(100vh - 95px);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 900px;
+  color: #ffffff;
+}
+@media (min-width: 768px) {
+  .offer {
+    height: calc(100vh - 125px);
+    min-height: 900px;
+    position: relative;
+    overflow: hidden;
+  }
+  .offer:before {
+    content: "";
+    position: absolute;
+    right: -200px;
+    top: 0;
+    width: 550px;
+    height: 560px;
+  }
+}
+
+.offer__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
 }
 
 /**
