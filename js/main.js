@@ -41,11 +41,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _overlay_overlay__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./overlay/overlay */ "./src/components/overlay/overlay.js");
 /* harmony import */ var _offer_offer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./offer/offer */ "./src/components/offer/offer.js");
 /* harmony import */ var _offer_offer__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_offer_offer__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _price_price__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./price/price */ "./src/components/price/price.js");
+/* harmony import */ var _price_price__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_price_price__WEBPACK_IMPORTED_MODULE_5__);
 // Form
  // Hamburger
 
 
  // import './modal/modal'
+
 
 
 
@@ -211,6 +214,29 @@ function overlayRemove() {
 
   body.classList.remove('is-animate', 'is-active');
 }
+
+/***/ }),
+
+/***/ "./src/components/price/price.js":
+/*!***************************************!*\
+  !*** ./src/components/price/price.js ***!
+  \***************************************/
+/***/ (() => {
+
+var price = document.querySelector('.price__list');
+price && price.addEventListener('click', function (e) {
+  return openTab(e);
+});
+
+var openTab = function openTab(e) {
+  var tab = e.target;
+
+  if (price.querySelector('._active')) {
+    price.querySelector('._active').classList.remove('_active');
+  }
+
+  tab.firstElementChild.classList.add('_active');
+};
 
 /***/ }),
 
