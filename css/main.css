@@ -12555,6 +12555,9 @@ ol {
 }
 
 /**
+ * * Vendor styles
+ * */
+/**
  * * Components
  * */
 .homepage {
@@ -14071,8 +14074,4 @@ body.is-animate .overlay {
   height: 400px;
   background: white;
 }
-
-/**
- * * Vendor styles
- * */
 /*# sourceMappingURL=main.css.map */

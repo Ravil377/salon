@@ -32,6 +32,7 @@
     <link rel="apple-touch-icon" sizes="1024x1024" href="./images/favicons/apple-touch-icon-1024x1024.png">
     <link rel="icon" type="image/png" sizes="228x228" href="./images/favicons/coast-228x228.png">
     <link rel="yandex-tableau-widget" href="./images/favicons/yandex-browser-manifest.json">
+    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/main.css"><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXALUaRurK7BZBn8N1Gbl8b4NpEO5a8ZQ&callback=initMap&v=weekly" defer>
 <!--[if lt IE 9]>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
@@ -67,7 +68,7 @@
         </nav>
       </div>
     </header>
-    <div class="welcome">
+    <div class="welcome wow animate__animated animate__fadeIn">
       <div class="container">
         <div class="welcome__content">
           <h1 class="welcome__title">улучшить свои природные данные<span>и сделать себе безупречные брови, ресницы и губы</span></h1>
@@ -84,21 +85,21 @@
         </div>
       </div>
     </div>
-    <div class="how"> 
+    <div class="how wow animate__animated animate__fadeIn">
       <div class="container how__container">
         <div class="desc">преимущества</div>
         <h2 class="how__title title">Как я создаю красоту?</h2>
         <div class="how__content">
           <div class="how__list">
-            <div class="how__item"> 
+            <div class="how__item">
               <div class="how__number">1</div>
               <div class="how__text">Инновации<span>Нахожусь в курсе трендов, чтобы повышать свое мастерство.</span></div>
             </div>
-            <div class="how__item"> 
+            <div class="how__item">
               <div class="how__number">2</div>
               <div class="how__text">Уникальность<span>Предлагаю то, что подчеркивает твои достоинства.</span></div>
             </div>
-            <div class="how__item"> 
+            <div class="how__item">
               <div class="how__number">3</div>
               <div class="how__text">Чистота<span>Работаю точно и аккуратно, чтобы результат радовал глаза еще много дней.</span></div>
             </div>
@@ -106,7 +107,7 @@
         </div>
       </div>
     </div>
-    <div class="beautiful">
+    <div class="beautiful wow animate__animated animate__fadeIn">
       <div class="container beautiful__container">
         <div class="desc">ресницы</div>
         <h2 class="beautiful__title title">Красивее, чем у природы<span>Ресницы, с которыми не нужна тушь и подводка</span></h2>
@@ -126,7 +127,7 @@
         </div>
       </div>
     </div>
-    <div class="brows">
+    <div class="brows wow animate__animated animate__fadeIn">
       <div class="container brows__container">
         <div class="desc">брови</div>
         <h2 class="brows__title title">Эстетичное оформление бровей<span>Как освежить и скорректировать овал лица</span></h2>
@@ -146,7 +147,7 @@
         </div>
       </div>
     </div>
-    <div class="lips">
+    <div class="lips wow animate__animated animate__fadeIn">
       <div class="container lips__container">
         <div class="desc desc_black">губы</div>
         <h2 class="lips__title title">Сочные губы без помады<span>Добавь себе цвета и красоты</span></h2>
@@ -158,7 +159,7 @@
         </div>
       </div>
     </div>
-    <div class="skins">
+    <div class="skins wow animate__animated animate__fadeIn">
       <div class="container skins__container">
         <div class="desc">кожа</div>
         <h2 class="skins__title title">Сияние кожи<span>Омолаживающие процедуры для лица</span></h2>
@@ -178,7 +179,7 @@
         </div>
       </div>
     </div>
-    <div class="reviews">
+    <div class="reviews wow animate__animated animate__fadeIn">
       <div class="container reviews__container">
         <div class="desc">отзывы</div>
         <h2 class="reviews__title title">Клиенты видят соответствие<br>«цена — качество»</h2>
@@ -201,7 +202,7 @@
         </div>
       </div>
     </div>
-    <div class="offer">
+    <div class="offer wow animate__animated animate__fadeIn">
       <div class="container offer__container"> 
         <div class="desc">оффер</div>
         <h2 class="offer__title title">Время любить себя<span>Все услуги красоты в одном месте</span></h2>
@@ -227,7 +228,11 @@
         </div>
         <div class="offer__map" id="map"></div>
       </div>
-    </div>
+    </div><a class="go-top go-top--js" href="#">
+      <svg class="icon icon-arrow-up ">
+        <use xlink:href="./images/sprite.svg#arrow-up"></use>
+      </svg></a>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
