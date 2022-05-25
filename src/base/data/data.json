@@ -2,11 +2,11 @@
   "mainmenuData": [
     {
       "text": "прайс",
-      "link": "#price"
+      "link": "price.html"
     },
     {
       "text": "адрес",
-      "link": "#address"
+      "link": "#tel"
     },
     {
       "text": "телефон",
