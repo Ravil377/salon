@@ -37,10 +37,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _form_form__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./form/form */ "./src/components/form/form.js");
 /* harmony import */ var _hamburger_hamburger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hamburger/hamburger */ "./src/components/hamburger/hamburger.js");
 /* harmony import */ var _overlay_overlay__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./overlay/overlay */ "./src/components/overlay/overlay.js");
+/* harmony import */ var _offer_offer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./offer/offer */ "./src/components/offer/offer.js");
+/* harmony import */ var _offer_offer__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_offer_offer__WEBPACK_IMPORTED_MODULE_3__);
 // Form
  // Hamburger
 
  // import './modal/modal'
+
 
 
 
@@ -137,6 +140,35 @@ enquire_js__WEBPACK_IMPORTED_MODULE_0___default().register('screen and (max-widt
     $closeBtn && $closeBtn.removeEventListener('click', hideMenu);
   }
 });
+
+/***/ }),
+
+/***/ "./src/components/offer/offer.js":
+/*!***************************************!*\
+  !*** ./src/components/offer/offer.js ***!
+  \***************************************/
+/***/ (() => {
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  var uluru = {
+    lat: 52.517,
+    lng: 13.503
+  }; // The map, centered at Uluru
+
+  var map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 4,
+    center: uluru
+  }); // The marker, positioned at Uluru
+
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
+}
+
+window.initMap = initMap;
 
 /***/ }),
 
