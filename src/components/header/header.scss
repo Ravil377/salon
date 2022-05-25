@@ -1,0 +1,36 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: $white;
+    z-index: 2;
+    &__hamburger {
+        padding: 0;
+    }
+}
+
+.header__container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.header__title {
+    font-size: 20px;
+    font-weight: 100;
+}
+.header__nav {
+    max-width: 250px;
+    ul {
+        @include ul-none();
+        display: flex;
+        font-size: 18px;
+        font-weight: 100;
+        li {
+            a {
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+}

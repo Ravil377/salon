@@ -1,3 +1,9 @@
 .homepage {
     position: relative;
+    font-family: cerapro;
+    color: $black;
+}
+
+.container {
+    @include container(1440px, 20px);
 }

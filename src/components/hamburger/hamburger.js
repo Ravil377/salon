@@ -9,13 +9,13 @@ mainmenuList.addEventListener('click', hideMenu)
 function showMenu() {
 	$mainmenu.classList.add('is-active')
 	$hamburger.classList.add('is-active')
-	overlayAdd()
+	// overlayAdd()
 }
 
 function hideMenu() {
 	$mainmenu.classList.remove('is-active')
 	$hamburger.classList.remove('is-active')
-	overlayRemove()
+	// overlayRemove()
 }
 
 const clickHandler = event => {
@@ -28,7 +28,7 @@ const clickHandler = event => {
 	}
 }
 
-enquire.register('screen and (max-width: 992px)', {
+enquire.register('screen and (max-width: 768px)', {
 	// deferSetup: true,
 	match() {
 		$hamburger.addEventListener('click', clickHandler)

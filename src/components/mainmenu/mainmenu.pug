@@ -13,24 +13,11 @@ mixin menuitem(item)
 
 nav.mainmenu.mainmenu--js
     //- button.btn-close.mainmenu__close-btn.mainmenu--close.d-md-none(type="button")
-
     ul.mainmenu__list
         each item in mainmenuData
             +menuitem(item)
-
                 if (item.subitems)
                     ul.mainmenu__dropdown
                         each subitem in item.subitems
                             +menuitem(subitem)
-    +icon("bashneft-petrotest")
-    ul.header__connection
-        li.d-none.d-lg-flex
-            a(href="tel:+79656693777" title='+7 965 66-93-7777') 
-                p.mb-0 +7 965 66-93-7777
-        li.d-none.d-lg-flex
-            a(href="mailto:NORKA@bn.rosneft.ru" title='NORKA@bn.rosneft.ru') 
-                p.mb-0 NORKA@bn.rosneft.ru
-        li
-            a(href="#" style="padding: 11px 21px;").header__connection-link_bg.--align-center
-                +icon('online').header__connection-icon
-                p.d-none.d-lg-block.mb-0 Прямая трансляция
+
