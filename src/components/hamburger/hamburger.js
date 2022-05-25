@@ -1,6 +1,7 @@
-import enquire from 'enquire.js'
+import enquire from 'enquire.js';
+import WOW from 'wow.js';
 import { overlayAdd, overlayRemove } from '../overlay/overlay'
-
+new WOW().init();
 const $hamburger = document.querySelector('.hamburger--js')
 const $mainmenu = document.querySelector('.mainmenu--js')
 const $closeBtn = document.querySelector('.mainmenu--close')

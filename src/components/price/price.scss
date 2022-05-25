@@ -1,0 +1,104 @@
+.price {
+    padding-top: 50px;
+    .desc {
+        transform: translateY(-10px);
+        @media (min-width: 1100px) {
+            transform: translateY(30px);    
+        }
+        
+    }
+}
+
+/* Sweep To Right */
+.hvr-sweep-to-right {
+    display: block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+  }
+  .hvr-sweep-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $gold;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+    color: white;
+  }
+  .hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+.price__list {
+    @include ul-none();
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+.price__item {
+    margin-bottom: 5px;
+    padding: 5px;
+    padding-bottom: 0;
+    font-weight: 500;
+    font-size: 24px;
+    background: $pink;
+    color: $white;
+    cursor:pointer;
+
+    ul {
+        display: none;
+        background-color: $white;
+        @include ul-none();
+        padding: 40px 0;
+        margin: 0 -5px;
+        color: $black;
+        @media (min-width: 576px) {
+            
+        }
+        li {
+            padding: 0 10px;
+            font-weight: 400;
+            font-size: 8px;
+            text-align: left;
+            @media (min-width: 576px) {
+                font-size: 12px;
+                padding: 0 20px;
+            }
+            .row {
+                padding: 10px 0;
+                & > div {
+                    padding: 0 5px;
+                }
+            }
+            
+        }
+    }
+}
+
+.price_bg {
+    background: #EDEDED;
+}
+._active {
+    display: block !important;
+}

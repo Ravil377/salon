@@ -83,6 +83,7 @@
     "jquery-form-styler": "latest",
     "magnific-popup": "latest",
     "owl.carousel": "latest",
-    "svg4everybody": "latest"
+    "svg4everybody": "latest",
+    "wow.js": "^1.2.2"
   }
 }
