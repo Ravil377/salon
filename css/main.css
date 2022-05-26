@@ -14278,6 +14278,12 @@ body.is-animate .overlay {
   font-size: 0.625rem;
   transition: 0.4s;
   border: 2px solid #c7988e;
+  margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .page__back a {
+    margin: 0;
+  }
 }
 .page__back a:hover {
   background: #ffffff;
@@ -14286,18 +14292,25 @@ body.is-animate .overlay {
 
 .page__offer {
   padding: 0;
-  width: 100%;
+  width: fit-content;
   order: 1;
 }
 @media (min-width: 576px) {
   .page__offer {
     order: 2;
     max-width: 550px;
+    width: 100%;
   }
 }
 .page__offer .social {
-  margin: 0;
+  margin: 0 auto;
   margin-top: 20px;
+}
+@media (min-width: 576px) {
+  .page__offer .social {
+    margin: 0;
+    margin-top: 20px;
+  }
 }
 .page__offer .social__link {
   color: #3c3c3b;
