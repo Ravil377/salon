@@ -1,15 +1,15 @@
 {
   "mainmenuData": [
     {
-      "text": "прайс",
+      "text": "Preise",
       "link": "price.html"
     },
     {
-      "text": "адрес",
+      "text": "Adresse",
       "link": "#tel"
     },
     {
-      "text": "телефон",
+      "text": "Telefon",
       "link": "#tel"
     }
   ]

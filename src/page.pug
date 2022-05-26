@@ -1,0 +1,26 @@
+extends base/pug/base
+
+append variables
+    - var title = 'Главная страница сайта'
+    - var pageClass = 'homepage'
+    - var menuHref = '/'
+
+block page 
+    article.page 
+        .container
+            .page__article
+                .row.page__article-top 
+                    .col.page__img
+                        img(src='./images/Lashlifting.jpg' alt='Lashlifting') 
+                    .col.page__info 
+                        p Процедура делает ресницы изогнутыми и длинными без туши или других средств. Профессиональная подтяжка приподнимает их и моделирует при помощи специальных косметических средств. Таким образом ресницы приобретают выразительный изгиб на срок до 6 недель. Лифтинг подчеркивает естественную красоту глаз.
+                        .page__price Стоимость: 
+                .row.page__article-bottom
+                    .col.page__back 
+                        a(href="/") Назад
+                    .col.page__offer 
+                        | Записаться
+                        include ./components/social/social
+
+                    
+
