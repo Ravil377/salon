@@ -12424,25 +12424,6 @@ h1, .h1 {
   }
 }
 
-h2, .h2 {
-  /* 30px - 22px */
-}
-@media (max-width: 320px) {
-  h2, .h2 {
-    font-size: 1.375rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-  h2, .h2 {
-    font-size: 1.875rem;
-  }
-}
-@media (max-width: 991.98px) {
-  h2, .h2 {
-    font-size: calc(1.375rem + 8 * (100vw - 20rem) / 790);
-  }
-}
-
 h3, .h3 {
   /* 26px - 20px */
 }
@@ -12944,20 +12925,11 @@ ol {
   display: block;
   text-align: center;
   font-weight: 500;
+  font-size: 1.875rem;
 }
-@media (max-width: 320px) {
-  .title {
-    font-size: 2.25rem;
-  }
-}
-@media (min-width: 1200px) and (max-width: 1399.98px) {
+@media (min-width: 1050px) {
   .title {
     font-size: 2.75rem;
-  }
-}
-@media (max-width: 991.98px) {
-  .title {
-    font-size: calc(2.25rem + 8 * (100vw - 20rem) / 790);
   }
 }
 .title span {
@@ -13707,8 +13679,18 @@ body.is-animate .overlay {
 }
 .list__item h3, .list__item .h3 {
   font-weight: 500;
-  font-size: 1.75rem;
+  font-size: 1.125rem;
   text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .list__item h3, .list__item .h3 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .list__item h3, .list__item .h3 {
+    font-size: 1.75rem;
+  }
 }
 .list__item p {
   font-weight: 300;
