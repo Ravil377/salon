@@ -106,8 +106,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _overlay_overlay__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../overlay/overlay */ "./src/components/overlay/overlay.js");
 
 
- // new WOW().init();
 
+new (wow_js__WEBPACK_IMPORTED_MODULE_1___default())().init();
 var $hamburger = document.querySelector('.hamburger--js');
 var $mainmenu = document.querySelector('.mainmenu--js');
 var $closeBtn = document.querySelector('.mainmenu--close');
