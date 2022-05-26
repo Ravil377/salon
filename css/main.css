@@ -14167,4 +14167,139 @@ body.is-animate .overlay {
 ._active {
   display: block !important;
 }
+
+.page {
+  padding: 50px 10px;
+}
+@media (min-width: 768px) {
+  .page {
+    padding: 100px 10px;
+  }
+}
+
+.page__article {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page__img {
+  display: block;
+  padding: 0;
+  height: auto;
+  width: fit-content;
+  margin-bottom: 50px;
+  border-radius: 5%;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .page__img {
+    margin-right: 40px;
+  }
+}
+.page__img img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.page__info {
+  padding: 0;
+  width: 100%;
+  font-weight: 400;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .page__info {
+    max-width: 550px;
+  }
+}
+
+.page__article-top {
+  justify-content: center;
+  margin-bottom: 40px;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .page__article-top {
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 768px) {
+  .page__article-top {
+    flex-direction: row;
+  }
+}
+
+.page__article-bottom {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 576px) {
+  .page__article-bottom {
+    flex-direction: row;
+  }
+}
+
+.page__price {
+  margin-top: auto;
+}
+
+.page__back {
+  padding: 0;
+  width: 100%;
+  order: 2;
+  margin-top: 30px;
+}
+@media (min-width: 576px) {
+  .page__back {
+    margin-top: 0;
+    order: 1;
+    max-width: 550px;
+    margin-right: 40px;
+  }
+}
+.page__back a {
+  text-decoration: none;
+  max-width: 130px;
+  width: 100%;
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background: #c7988e;
+  font-weight: 500;
+  font-size: 0.625rem;
+  transition: 0.4s;
+  border: 2px solid #c7988e;
+}
+.page__back a:hover {
+  background: #ffffff;
+  color: #3c3c3b;
+}
+
+.page__offer {
+  padding: 0;
+  width: 100%;
+  order: 1;
+}
+@media (min-width: 576px) {
+  .page__offer {
+    order: 2;
+    max-width: 550px;
+  }
+}
+.page__offer .social {
+  margin: 0;
+  margin-top: 20px;
+}
+.page__offer .social__link {
+  color: #3c3c3b;
+  border: 1px solid #3c3c3b;
+}
 /*# sourceMappingURL=main.css.map */
