@@ -14164,6 +14164,10 @@ body.is-animate .overlay {
   background: #EDEDED;
 }
 
+.price_bold .col {
+  font-weight: 600;
+}
+
 ._active {
   display: block !important;
 }
@@ -14243,10 +14247,6 @@ body.is-animate .overlay {
   .page__article-bottom {
     flex-direction: row;
   }
-}
-
-.page__price {
-  margin-top: auto;
 }
 
 .page__back {
