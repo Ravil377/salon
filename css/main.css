@@ -12641,9 +12641,10 @@ ol {
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition: 0.4s;
 }
 .logo__link:hover {
-  color: #c79a57;
+  color: #3c3c3b;
 }
 .logo__icon {
   width: 50px;
@@ -14058,6 +14059,7 @@ body.is-animate .overlay {
   .page__img {
     max-width: 550px;
     margin-right: 40px;
+    margin-bottom: 0;
   }
 }
 .page__img img {
@@ -14082,13 +14084,7 @@ body.is-animate .overlay {
 
 .page__article-top {
   justify-content: center;
-  margin-bottom: 40px;
   flex-direction: column;
-}
-@media (min-width: 576px) {
-  .page__article-top {
-    margin-bottom: 80px;
-  }
 }
 @media (min-width: 768px) {
   .page__article-top {
