@@ -12573,7 +12573,7 @@ ol {
 
 .header__title {
   font-size: 1.25rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .header__nav {
@@ -12585,11 +12585,15 @@ ol {
   margin: 0;
   display: flex;
   font-size: 1.125rem;
-  font-weight: 100;
+  font-weight: 300;
 }
 .header__nav ul li a {
   text-decoration: none;
   color: #3c3c3b;
+  transition: 0.4s;
+}
+.header__nav ul li a:hover {
+  color: #c79a57;
 }
 
 .logo__link {
@@ -12597,6 +12601,9 @@ ol {
   text-decoration: none;
   display: flex;
   align-items: center;
+}
+.logo__link:hover {
+  color: #c79a57;
 }
 .logo__icon {
   width: 50px;
