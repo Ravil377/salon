@@ -17,7 +17,7 @@
 
 .header__title {
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 300;
 }
 .header__nav {
     max-width: 250px;
@@ -25,11 +25,15 @@
         @include ul-none();
         display: flex;
         font-size: 18px;
-        font-weight: 100;
+        font-weight: 300;
         li {
             a {
                 text-decoration: none;
                 color: $black;
+                transition: .4s;
+                &:hover {
+                    color: $gold;
+                }
             }
         }
     }
