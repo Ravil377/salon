@@ -13517,13 +13517,12 @@ body.is-animate .overlay {
 
 .how {
   width: 100%;
-  height: calc(100vh - 95px);
   padding-top: 50px;
+  padding-bottom: 50px;
   min-height: 900px;
 }
 @media (min-width: 768px) {
   .how {
-    height: calc(100vh - 125px);
     min-height: 800px;
   }
 }
@@ -13668,13 +13667,13 @@ body.is-animate .overlay {
   width: 100%;
   text-align: center;
 }
-.list__item_a {
+.list__item_1 {
   grid-area: a;
 }
-.list__item_b {
+.list__item_2 {
   grid-area: b;
 }
-.list__item_c {
+.list__item_3 {
   grid-area: c;
 }
 .list__item h3, .list__item .h3 {
@@ -13922,6 +13921,7 @@ body.is-animate .overlay {
   display: flex;
   padding: -10px;
   flex-direction: column;
+  flex-wrap: wrap;
   z-index: 1;
   justify-content: center;
 }
@@ -14059,6 +14059,7 @@ body.is-animate .overlay {
 
 .price {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 .price .desc {
   transform: translateY(-10px);
@@ -14173,12 +14174,7 @@ body.is-animate .overlay {
 }
 
 .page {
-  padding: 50px 10px;
-}
-@media (min-width: 768px) {
-  .page {
-    padding: 100px 10px;
-  }
+  padding: 20px 10px;
 }
 
 .page__article {
