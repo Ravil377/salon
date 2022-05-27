@@ -1,10 +1,9 @@
 .how {
     width: 100%;
-    height: calc(100vh - 95px);
     padding-top: 50px;
+    padding-bottom: 50px;
     min-height: 900px;
     @media (min-width: 768px) {
-        height: calc(100vh - 125px);
         min-height: 800px;
     }
     @media (min-width: 1300px) {

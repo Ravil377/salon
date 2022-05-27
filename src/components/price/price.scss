@@ -1,5 +1,6 @@
 .price {
     padding-top: 50px;
+    padding-bottom: 50px;
     .desc {
         transform: translateY(-10px);
         @media (min-width: 1100px) {
@@ -97,6 +98,11 @@
 
 .price_bg {
     background: #EDEDED;
+}
+.price_bold {
+    .col {
+        font-weight: 600;
+    }
 }
 ._active {
     display: block !important;
